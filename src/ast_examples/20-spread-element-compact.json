@@ -1,0 +1,84 @@
+{
+    "type": "File",
+    "errors": [],
+    "program": {
+        "type": "Program",
+        "sourceType": "module",
+        "interpreter": null,
+        "body": [
+            {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "profil"
+                        },
+                        "init": {
+                            "type": "ObjectExpression",
+                            "properties": [
+                                {
+                                    "type": "ObjectProperty",
+                                    "method": false,
+                                    "key": {
+                                        "type": "Identifier",
+                                        "name": "prenom"
+                                    },
+                                    "computed": false,
+                                    "shorthand": false,
+                                    "value": {
+                                        "type": "StringLiteral",
+                                        "value": "Sarah"
+                                    }
+                                },
+                                {
+                                    "type": "ObjectProperty",
+                                    "method": false,
+                                    "key": {
+                                        "type": "Identifier",
+                                        "name": "profilComplet"
+                                    },
+                                    "computed": false,
+                                    "shorthand": false,
+                                    "value": {
+                                        "type": "BooleanLiteral",
+                                        "value": false
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "kind": "var"
+            },
+            {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "clone"
+                        },
+                        "init": {
+                            "type": "ObjectExpression",
+                            "properties": [
+                                {
+                                    "type": "SpreadElement",
+                                    "argument": {
+                                        "type": "Identifier",
+                                        "name": "profil"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "kind": "var"
+            }
+        ],
+        "directives": []
+    },
+    "comments": []
+}

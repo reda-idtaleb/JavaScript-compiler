@@ -1,0 +1,174 @@
+{
+  "type": "File",
+  "program": {
+    "type": "Program",
+    "sourceType": "script",
+    "body": [
+      {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Personne"
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "nom"
+          },
+          {
+            "type": "Identifier",
+            "name": "age"
+          },
+          {
+            "type": "Identifier",
+            "name": "surnom"
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ExpressionStatement",
+              "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "Super"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "nom"
+                  },
+                  "computed": false
+                },
+                "right": {
+                  "type": "Identifier",
+                  "name": "nom"
+                }
+              }
+            },
+            {
+              "type": "ExpressionStatement",
+              "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "ThisExpression"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "age"
+                  },
+                  "computed": false
+                },
+                "right": {
+                  "type": "Identifier",
+                  "name": "age"
+                }
+              }
+            },
+            {
+              "type": "ExpressionStatement",
+              "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "ThisExpression"
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "surnom"
+                  },
+                  "computed": false
+                },
+                "right": {
+                  "type": "Identifier",
+                  "name": "surnom"
+                }
+              }
+            }
+          ],
+          "directives": []
+        }
+      },
+      {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "rand"
+            },
+            "init": {
+              "type": "NewExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "Personne"
+              },
+              "arguments": [
+                {
+                  "type": "StringLiteral",
+                  "value": "Rand McNally"
+                },
+                {
+                  "type": "NumericLiteral",
+                  "value": 33
+                },
+                {
+                  "type": "StringLiteral",
+                  "value": "Randy"
+                }
+              ]
+            }
+          }
+        ],
+        "kind": "var"
+      },
+      {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "ken"
+            },
+            "init": {
+              "type": "NewExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "Personne"
+              },
+              "arguments": [
+                {
+                  "type": "StringLiteral",
+                  "value": "Ken Jones"
+                },
+                {
+                  "type": "NumericLiteral",
+                  "value": 39
+                },
+                {
+                  "type": "StringLiteral",
+                  "value": "Kenny"
+                }
+              ]
+            }
+          }
+        ],
+        "kind": "var"
+      }
+    ],
+    "directives": []
+  }
+}

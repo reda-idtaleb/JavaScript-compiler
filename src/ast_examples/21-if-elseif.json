@@ -1,0 +1,120 @@
+{
+    "type": "File",
+    "errors": [],
+    "program": {
+        "type": "Program",
+        "sourceType": "module",
+        "interpreter": null,
+        "body": [
+            {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "x"
+                        },
+                        "init": {
+                            "type": "NumericLiteral",
+                            "value": 0
+                        }
+                    }
+                ],
+                "kind": "var"
+            },
+            {
+                "type": "IfStatement",
+                "test": {
+                    "type": "BinaryExpression",
+                    "left": {
+                        "type": "Identifier",
+                        "name": "x"
+                    },
+                    "operator": "!=",
+                    "right": {
+                        "type": "NumericLiteral",
+                        "value": 0
+                    }
+                },
+                "consequent": {
+                    "type": "BlockStatement",
+                    "body": [
+                        {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                                "type": "UpdateExpression",
+                                "operator": "++",
+                                "prefix": false,
+                                "argument": {
+                                    "type": "Identifier",
+                                    "name": "x"
+                                }
+                            }
+                        }
+                    ],
+                    "directives": []
+                },
+                "alternate": {
+                    "type": "IfStatement",
+                    "test": {
+                        "type": "BinaryExpression",
+                        "left": {
+                            "type": "Identifier",
+                            "name": "x"
+                        },
+                        "operator": ">",
+                        "right": {
+                            "type": "NumericLiteral",
+                            "value": 7
+                        }
+                    },
+                    "consequent": {
+                        "type": "BlockStatement",
+                        "body": [
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "AssignmentExpression",
+                                    "operator": "=",
+                                    "left": {
+                                        "type": "Identifier",
+                                        "name": "x"
+                                    },
+                                    "right": {
+                                        "type": "NumericLiteral",
+                                        "value": 0
+                                    }
+                                }
+                            }
+                        ],
+                        "directives": []
+                    },
+                    "alternate": {
+                        "type": "BlockStatement",
+                        "body": [
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "AssignmentExpression",
+                                    "operator": "+=",
+                                    "left": {
+                                        "type": "Identifier",
+                                        "name": "x"
+                                    },
+                                    "right": {
+                                        "type": "NumericLiteral",
+                                        "value": 1
+                                    }
+                                }
+                            }
+                        ],
+                        "directives": []
+                    }
+                }
+            }
+        ],
+        "directives": []
+    },
+    "comments": []
+}

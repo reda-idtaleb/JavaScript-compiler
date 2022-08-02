@@ -1,0 +1,174 @@
+{
+  "type": "File",
+  "program": {
+    "type": "Program",
+    "sourceType": "script",
+    "body": [
+      {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "NullLiteral"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "x"
+          },
+          "computed": false
+        }
+      },
+      {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "LogicalExpression",
+          "left": {
+            "type": "BooleanLiteral",
+            "value": true
+          },
+          "operator": "&&",
+          "right": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "NullLiteral"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "x"
+            },
+            "computed": false
+          }
+        }
+      },
+      {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "LogicalExpression",
+          "left": {
+            "type": "BooleanLiteral",
+            "value": false
+          },
+          "operator": "&&",
+          "right": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "NullLiteral"
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "x"
+            },
+            "computed": false
+          }
+        }
+      },
+      {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "BinaryExpression",
+          "left": {
+            "type": "NumericLiteral",
+            "value": 1
+          },
+          "operator": "/",
+          "right": {
+            "type": "NumericLiteral",
+            "value": 0
+          }
+        }
+      },
+      {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "x"
+            },
+            "init": {
+              "type": "NumericLiteral",
+              "value": 0
+            }
+          }
+        ],
+        "kind": "var"
+      },
+      {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "BinaryExpression",
+          "left": {
+            "type": "UpdateExpression",
+            "operator": "++",
+            "prefix": false,
+            "argument": {
+              "type": "Identifier",
+              "name": "x"
+            }
+          },
+          "operator": "+",
+          "right": {
+            "type": "UpdateExpression",
+            "operator": "++",
+            "prefix": false,
+            "argument": {
+              "type": "Identifier",
+              "name": "x"
+            }
+          }
+        }
+      },
+      {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "y"
+            },
+            "init": {
+              "type": "NumericLiteral",
+              "value": 0
+            }
+          }
+        ],
+        "kind": "var"
+      },
+      {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "BinaryExpression",
+          "left": {
+            "type": "UpdateExpression",
+            "operator": "++",
+            "prefix": true,
+            "argument": {
+              "type": "Identifier",
+              "name": "y"
+            }
+          },
+          "operator": "+",
+          "right": {
+            "type": "UpdateExpression",
+            "operator": "++",
+            "prefix": true,
+            "argument": {
+              "type": "Identifier",
+              "name": "y"
+            }
+          }
+        }
+      },
+      {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "Identifier",
+          "name": "z"
+        }
+      }
+    ],
+    "directives": []
+  }
+}

@@ -1,0 +1,11 @@
+var a = 1;
+var b = 2;
+var c;
+c = a;
+c = a + b;
+c += 1;
+print(c);
+c += a;
+print(c);
+c += a + b;
+print(c);

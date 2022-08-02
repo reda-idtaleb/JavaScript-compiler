@@ -1,0 +1,130 @@
+{
+  "type": "File",
+  "program": {
+    "type": "Program",
+    "sourceType": "script",
+    "body": [
+      {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "ken0"
+            },
+            "init": {
+              "type": "ObjectExpression",
+              "properties": [
+                {
+                  "type": "ObjectProperty",
+                  "method": false,
+                  "shorthand": false,
+                  "computed": false,
+                  "key": {
+                    "type": "StringLiteral",
+                    "value": "nom"
+                  },
+                  "value": {
+                    "type": "StringLiteral",
+                    "value": "Ken Jones"
+                  }
+                },
+                {
+                  "type": "ObjectProperty",
+                  "method": false,
+                  "shorthand": false,
+                  "computed": false,
+                  "key": {
+                    "type": "StringLiteral",
+                    "value": "age"
+                  },
+                  "value": {
+                    "type": "NumericLiteral",
+                    "value": 39
+                  }
+                },
+                {
+                  "type": "ObjectProperty",
+                  "method": false,
+                  "shorthand": false,
+                  "computed": false,
+                  "key": {
+                    "type": "StringLiteral",
+                    "value": "surnom"
+                  },
+                  "value": {
+                    "type": "StringLiteral",
+                    "value": "Kenny"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "kind": "var"
+      },
+      {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "ken1"
+            },
+            "init": {
+              "type": "ObjectExpression",
+              "properties": [
+                {
+                  "type": "ObjectProperty",
+                  "method": false,
+                  "shorthand": false,
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "name": "nom"
+                  },
+                  "value": {
+                    "type": "StringLiteral",
+                    "value": "Ken Jones"
+                  }
+                },
+                {
+                  "type": "ObjectProperty",
+                  "method": false,
+                  "shorthand": false,
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "name": "age"
+                  },
+                  "value": {
+                    "type": "NumericLiteral",
+                    "value": 39
+                  }
+                },
+                {
+                  "type": "ObjectProperty",
+                  "method": false,
+                  "shorthand": false,
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "name": "surnom"
+                  },
+                  "value": {
+                    "type": "StringLiteral",
+                    "value": "Kenny"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "kind": "var"
+      }
+    ],
+    "directives": []
+  }
+}

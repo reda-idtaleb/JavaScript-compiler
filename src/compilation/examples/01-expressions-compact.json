@@ -1,0 +1,155 @@
+{
+  "type": "File",
+  "program": {
+    "type": "Program",
+    "sourceType": "script",
+    "body": [
+      {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "NumericLiteral",
+          "value": 1
+        }
+      },
+      {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "BinaryExpression",
+          "left": {
+            "type": "NumericLiteral",
+            "value": 1
+          },
+          "operator": "+",
+          "right": {
+            "type": "NumericLiteral",
+            "value": 2
+          }
+        }
+      },
+      {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "BinaryExpression",
+          "left": {
+            "type": "BinaryExpression",
+            "left": {
+              "type": "NumericLiteral",
+              "value": 1
+            },
+            "operator": "+",
+            "right": {
+              "type": "NumericLiteral",
+              "value": 2
+            }
+          },
+          "operator": "+",
+          "right": {
+            "type": "NumericLiteral",
+            "value": 3
+          }
+        }
+      },
+      {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "BinaryExpression",
+          "left": {
+            "type": "NumericLiteral",
+            "value": 1
+          },
+          "operator": "+",
+          "right": {
+            "type": "BinaryExpression",
+            "left": {
+              "type": "NumericLiteral",
+              "value": 2
+            },
+            "operator": "*",
+            "right": {
+              "type": "NumericLiteral",
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "BinaryExpression",
+          "left": {
+            "type": "BinaryExpression",
+            "left": {
+              "type": "NumericLiteral",
+              "value": 1
+            },
+            "operator": "+",
+            "right": {
+              "type": "NumericLiteral",
+              "value": 2
+            }
+          },
+          "operator": "*",
+          "right": {
+            "type": "NumericLiteral",
+            "value": 3
+          }
+        }
+      },
+      {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "BinaryExpression",
+          "left": {
+            "type": "BinaryExpression",
+            "left": {
+              "type": "NumericLiteral",
+              "value": 1
+            },
+            "operator": "*",
+            "right": {
+              "type": "NumericLiteral",
+              "value": 2
+            }
+          },
+          "operator": "+",
+          "right": {
+            "type": "NumericLiteral",
+            "value": 3
+          }
+        }
+      },
+      {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "BinaryExpression",
+          "left": {
+            "type": "BinaryExpression",
+            "left": {
+              "type": "NumericLiteral",
+              "value": 1
+            },
+            "operator": "+",
+            "right": {
+              "type": "BinaryExpression",
+              "left": {
+                "type": "NumericLiteral",
+                "value": 2
+              },
+              "operator": "*",
+              "right": {
+                "type": "NumericLiteral",
+                "value": 3
+              }
+            }
+          },
+          "operator": "+",
+          "right": {
+            "type": "NumericLiteral",
+            "value": 4
+          }
+        }
+      }
+    ],
+    "directives": []
+  }
+}

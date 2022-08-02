@@ -1,0 +1,188 @@
+{
+    "type": "File",
+    "errors": [],
+    "program": {
+        "type": "Program",
+        "sourceType": "module",
+        "interpreter": null,
+        "body": [
+            {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "g"
+                        },
+                        "init": {
+                            "type": "NumericLiteral",
+                            "value": 1
+                        }
+                    }
+                ],
+                "kind": "var"
+            },
+            {
+                "type": "FunctionDeclaration",
+                "id": {
+                    "type": "Identifier",
+                    "name": "calcul"
+                },
+                "generator": false,
+                "async": false,
+                "params": [
+                    {
+                        "type": "Identifier",
+                        "name": "n"
+                    },
+                    {
+                        "type": "Identifier",
+                        "name": "m"
+                    }
+                ],
+                "body": {
+                    "type": "BlockStatement",
+                    "body": [
+                        {
+                            "type": "VariableDeclaration",
+                            "declarations": [
+                                {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                        "type": "Identifier",
+                                        "name": "a"
+                                    },
+                                    "init": {
+                                        "type": "NumericLiteral",
+                                        "value": 2
+                                    }
+                                }
+                            ],
+                            "kind": "var"
+                        },
+                        {
+                            "type": "VariableDeclaration",
+                            "declarations": [
+                                {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                        "type": "Identifier",
+                                        "name": "b"
+                                    },
+                                    "init": {
+                                        "type": "NumericLiteral",
+                                        "value": 3
+                                    }
+                                }
+                            ],
+                            "kind": "var"
+                        },
+                        {
+                            "type": "ReturnStatement",
+                            "argument": {
+                                "type": "BinaryExpression",
+                                "left": {
+                                    "type": "BinaryExpression",
+                                    "left": {
+                                        "type": "BinaryExpression",
+                                        "left": {
+                                            "type": "BinaryExpression",
+                                            "left": {
+                                                "type": "BinaryExpression",
+                                                "left": {
+                                                    "type": "NumericLiteral",
+                                                    "value": 2
+                                                },
+                                                "operator": "*",
+                                                "right": {
+                                                    "type": "Identifier",
+                                                    "name": "g"
+                                                }
+                                            },
+                                            "operator": "+",
+                                            "right": {
+                                                "type": "BinaryExpression",
+                                                "left": {
+                                                    "type": "NumericLiteral",
+                                                    "value": 4
+                                                },
+                                                "operator": "*",
+                                                "right": {
+                                                    "type": "Identifier",
+                                                    "name": "a"
+                                                }
+                                            }
+                                        },
+                                        "operator": "+",
+                                        "right": {
+                                            "type": "BinaryExpression",
+                                            "left": {
+                                                "type": "NumericLiteral",
+                                                "value": 8
+                                            },
+                                            "operator": "*",
+                                            "right": {
+                                                "type": "Identifier",
+                                                "name": "b"
+                                            }
+                                        }
+                                    },
+                                    "operator": "+",
+                                    "right": {
+                                        "type": "BinaryExpression",
+                                        "left": {
+                                            "type": "NumericLiteral",
+                                            "value": 16
+                                        },
+                                        "operator": "*",
+                                        "right": {
+                                            "type": "Identifier",
+                                            "name": "n"
+                                        }
+                                    }
+                                },
+                                "operator": "+",
+                                "right": {
+                                    "type": "BinaryExpression",
+                                    "left": {
+                                        "type": "NumericLiteral",
+                                        "value": 32
+                                    },
+                                    "operator": "*",
+                                    "right": {
+                                        "type": "Identifier",
+                                        "name": "m"
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "directives": []
+                }
+            },
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                        "type": "Identifier",
+                        "name": "calcul"
+                    },
+                    "arguments": [
+                        {
+                            "type": "NumericLiteral",
+                            "value": 4
+                        },
+                        {
+                            "type": "NumericLiteral",
+                            "value": 5
+                        }
+                    ]
+                }
+            }
+        ],
+        "directives": []
+    },
+    "comments": []
+}

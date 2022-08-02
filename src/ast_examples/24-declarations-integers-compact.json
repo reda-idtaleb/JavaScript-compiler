@@ -1,0 +1,102 @@
+{
+    "type": "File",
+    "errors": [],
+    "program": {
+        "type": "Program",
+        "sourceType": "module",
+        "interpreter": null,
+        "body": [
+            {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "x"
+                        },
+                        "init": null
+                    }
+                ],
+                "kind": "var"
+            },
+            {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "y"
+                        },
+                        "init": {
+                            "type": "NumericLiteral",
+                            "value": 1
+                        }
+                    }
+                ],
+                "kind": "var"
+            },
+            {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "a"
+                        },
+                        "init": {
+                            "type": "NumericLiteral",
+                            "value": 1
+                        }
+                    }
+                ],
+                "kind": "var"
+            },
+            {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "b"
+                        },
+                        "init": {
+                            "type": "NullLiteral"
+                        }
+                    }
+                ],
+                "kind": "var"
+            },
+            {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "r"
+                        },
+                        "init": {
+                            "type": "BinaryExpression",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "y"
+                            },
+                            "operator": "+",
+                            "right": {
+                                "type": "Identifier",
+                                "name": "a"
+                            }
+                        }
+                    }
+                ],
+                "kind": "var"
+            }
+        ],
+        "directives": []
+    },
+    "comments": []
+}

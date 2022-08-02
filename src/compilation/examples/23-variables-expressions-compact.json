@@ -1,0 +1,200 @@
+{
+    "type": "File",
+    "errors": [],
+    "program": {
+        "type": "Program",
+        "sourceType": "module",
+        "interpreter": null,
+        "body": [
+            {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "a"
+                        },
+                        "init": {
+                            "type": "NumericLiteral",
+                            "value": 1
+                        }
+                    }
+                ],
+                "kind": "var"
+            },
+            {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "b"
+                        },
+                        "init": {
+                            "type": "NumericLiteral",
+                            "value": 2
+                        }
+                    }
+                ],
+                "kind": "var"
+            },
+            {
+                "type": "VariableDeclaration",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "c"
+                        },
+                        "init": null
+                    }
+                ],
+                "kind": "var"
+            },
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                        "type": "Identifier",
+                        "name": "c"
+                    },
+                    "right": {
+                        "type": "Identifier",
+                        "name": "a"
+                    }
+                }
+            },
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                        "type": "Identifier",
+                        "name": "c"
+                    },
+                    "right": {
+                        "type": "BinaryExpression",
+                        "left": {
+                            "type": "Identifier",
+                            "name": "a"
+                        },
+                        "operator": "+",
+                        "right": {
+                            "type": "Identifier",
+                            "name": "b"
+                        }
+                    }
+                }
+            },
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "+=",
+                    "left": {
+                        "type": "Identifier",
+                        "name": "c"
+                    },
+                    "right": {
+                        "type": "NumericLiteral",
+                        "value": 1
+                    }
+                }
+            },
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                        "type": "Identifier",
+                        "name": "print"
+                    },
+                    "arguments": [
+                        {
+                            "type": "Identifier",
+                            "name": "c"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "+=",
+                    "left": {
+                        "type": "Identifier",
+                        "name": "c"
+                    },
+                    "right": {
+                        "type": "Identifier",
+                        "name": "a"
+                    }
+                }
+            },
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                        "type": "Identifier",
+                        "name": "print"
+                    },
+                    "arguments": [
+                        {
+                            "type": "Identifier",
+                            "name": "c"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "+=",
+                    "left": {
+                        "type": "Identifier",
+                        "name": "c"
+                    },
+                    "right": {
+                        "type": "BinaryExpression",
+                        "left": {
+                            "type": "Identifier",
+                            "name": "a"
+                        },
+                        "operator": "+",
+                        "right": {
+                            "type": "Identifier",
+                            "name": "b"
+                        }
+                    }
+                }
+            },
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                        "type": "Identifier",
+                        "name": "print"
+                    },
+                    "arguments": [
+                        {
+                            "type": "Identifier",
+                            "name": "c"
+                        }
+                    ]
+                }
+            }
+        ],
+        "directives": []
+    },
+    "comments": []
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Babel</title>
+</head>
+<body>
+<header>
+<h1 class="title">Babel</h1>
+</header>
+
+<textarea name="source" id="source" rows="25" cols="100" placeholder="function f() { return; }"></textarea>
+<script src="babel.min.js"></script>
+
+<div>
+    <label>
+        <input type="checkbox" id="compact"></input>
+        Compact representation (remove “noise” such as comments and
+        source location information)
+    </label>
+</div>
+
+<div>
+    <p>
+    <button onclick="generateAST(false);">Download AST</button>
+    <button onclick="copyAST();">Copy AST</button>
+    </p>
+</div>
+
+<div>
+    <p>Open in Firefox JSON viewer:
+    <button onclick="generateAST(true);">Open AST</button>
+    </p>
+</div>
+
+<p style="opacity: 0%">
+AST in JSON syntax to copy:
+<input type="text" id="target"></input>
+</p>
+
+<script>
+const noisyKeys = [ "start", "end", "loc", "extra", "leadingComments", "trailingComments" ];
+
+function compactAST(x) {
+    for(let k of noisyKeys) {
+        if(typeof(x[k]) !== "undefined")
+            delete(x[k]);
+    }
+    for(let y in x) {
+        if(typeof(x[y]) === "object" && x[y] !== null)
+            compactAST(x[y]);
+    }
+}
+
+function generateAST(shouldOpen) {
+    const src = document.getElementById("source").value;
+    const ast = Babel.transform(src, {ast: true}).ast;
+    if(document.getElementById("compact").checked)
+        compactAST(ast);
+    const data = 'data:application/json,' + encodeURIComponent(JSON.stringify(ast));
+
+    var elem = document.createElement('a');
+    elem.setAttribute('href', data);
+    if(shouldOpen)
+        elem.setAttribute('target', '_blank');
+    else
+        elem.setAttribute('download', 'ast.json');
+    document.body.appendChild(elem);
+    elem.click();
+    elem.remove();
+}
+
+function copyAST() {
+    const src = document.getElementById("source").value;
+    const tgt = document.getElementById("target");
+    const ast = Babel.transform(src, {ast: true}).ast;
+    if(document.getElementById("compact").checked)
+        compactAST(ast);
+    tgt.value = JSON.stringify(ast);
+    tgt.select();
+    tgt.setSelectionRange(0,9999999);
+    document.execCommand("copy");
+}
+</script>
+</body>
+</html>
